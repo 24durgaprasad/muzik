@@ -1,7 +1,7 @@
 // script.js
 
 let songs = [
-    { name: "Premalo", file: "premalo.mp3" },
+    { name: "Premalo", file: "1.mp3" },
     { name: "Rage of daaku", file: "2.mp3" },
     { name: "Kingdom Teaser", file: "3.mp3" },
     { name: "Godari gattu", file: "4.mp3" }
