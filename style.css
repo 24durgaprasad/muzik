@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+}
+
+.nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.logo svg {
+    fill: white;
+    margin-left: 1.5rem; /* Using rem for scalability */
+    width: 2rem; /* Adjustable size */
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.5rem;
+}
+
+.hero {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    flex-direction: row; /* Default layout */
+}
+
+.left {
+    height: 75vh;
+    width: 25vw;
+    border-radius: 7px;
+    background-color: #121212;
+}
+
+.right {
+    height: 75vh;
+    width: 75vw;
+    border-radius: 7px;
+    background-color: #121212;
+    overflow-y: scroll;
+}
+
+.library svg {
+    fill: gray;
+    height: 1.5rem; /* Relative units */
+    width: 1.5rem;
+}
+
+.library {
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 1rem; /* Scalable font size */
+    color: gray;
+}
+
+footer a {
+    text-decoration: none;
+    color: gray;
+    font-size: 0.8125rem; /* 13px in rem */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem;
+}
+
+footer {
+    position: relative;
+    top: 52vh;
+    display: block;
+    align-items: flex-start;
+}
+
+h1 a {
+    text-decoration: none;
+    font-size: 1.5625rem; /* 25px in rem */
+}
+
+.head {
+    margin: 1rem;
+    font-family: sans-serif;
+}
+
+.card {
+    background-color: #202020;
+    width: 204px;
+    height: 274px;
+    border-radius: 10px;
+    flex-shrink: 0; /* Prevents shrinking in flex container */
+}
+
+.card img {
+    width: 90%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+    margin: 0.625rem; /* 10px in rem */
+}
+
+.card h1 {
+    font-size: 1.25rem; /* 20px in rem */
+    margin-left: 0.625rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.card svg {
+    background-color: #1ed760;
+    width: 1.875rem; /* 30px in rem */
+    height: 1.875rem;
+    border-radius: 50%;
+    position: relative;
+    bottom: 5.8125rem; /* 93px in rem */
+    left: 9.6875rem; /* 155px in rem */
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playbar {
+    background-color: #121212;
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    top: 0.5625rem; /* 9px in rem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem; /* 30px in rem */
+}
+
+.playbar i {
+    font-size: 2.5rem; /* 40px in rem */
+}
+
+#song-name {
+    color: white;
+    font-size: 1.25rem; /* 20px in rem */
+    margin-left: 1.25rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .left {
+        width: 30vw; /* Slightly wider on medium screens */
+    }
+    .right {
+        width: 70vw;
+    }
+    .card {
+        width: 180px; /* Smaller cards */
+        height: 240px;
+    }
+    .card svg {
+        left: 8.5rem; /* Adjusted for smaller card */
+        bottom: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack vertically on smaller screens */
+    }
+    .left, .right {
+        width: 100%; /* Full width */
+        height: auto; /* Adjust height dynamically */
+        margin-bottom: 1rem;
+    }
+    .card {
+        width: 150px;
+        height: 200px;
+    }
+    .card img {
+        margin: 0.5rem;
+    }
+    .card h1 {
+        font-size: 1rem;
+    }
+    .card svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        left: 7rem;
+        bottom: 4rem;
+    }
+    footer {
+        top: 0; /* Reset position for stacked layout */
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        height: 8vh; /* Smaller nav */
+    }
+    .logo svg {
+        width: 1.5rem;
+    }
+    .playbar i {
+        font-size: 1.5rem; /* Smaller icons */
+    }
+    #song-name {
+        font-size: 1rem;
+    }
+    .card {
+        width: 120px;
+        height: 160px;
+    }
+    .card h1 {
+        font-size: 0.
+    }
+
+    footer{
+        display: none;
+    }
+}
+
+
+
+
+
+
